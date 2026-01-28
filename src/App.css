@@ -1,0 +1,99 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --toastify-color-progress-warning: rgba(241, 196, 15, 0.6);
+  -toastify-color-progress-info: #0b1373;
+  --toastify-text-color-warning: #0b1373;
+  /* used to control the opacity of the progress trail */
+  --toastify-color-progress-bgo: 0.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  border: 0.1rem solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 680px;
+}
+
+.contact-form fieldset {
+  padding: 10px 30px 0;
+}
+
+.contact-form legend {
+  color: white;
+  background: black;
+  padding: 5px 10px;
+}
+
+.contact-form fieldset > div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact-form button,
+.contact-form label,
+.contact-form input {
+  display: block;
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+}
+
+.contact-form input {
+  box-shadow: inset 1px 1px 3px #cccccc;
+  border-radius: 5px;
+}
+
+.contact-form input:hover,
+.contact-form input:focus {
+  background-color: transparent;
+}
+
+.contact-form button {
+  min-height: 3rem;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.contact-form input:required {
+  border: 2px solid;
+}
+
+.contact-form input:optional {
+  border: 2px dashed;
+}
